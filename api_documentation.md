@@ -22,6 +22,13 @@ Below is a list of some of the response codes you might see
 
 ## User
 
+* [User Schema](#user-schema)
+* [Fetch All Users](#user-fetch-all)
+* [Create User](#user-create)
+* [Login User](#user-login)
+* [Fund Wallet](#user-fund)
+* [Transfer Funds](#user-funds-transfer)
+
 ### User Schema
 
 The representation of a valid user is given below
@@ -55,7 +62,7 @@ Response
 
 `500` Internal server error
 
-### User creation
+### Create User
 
 #### `POST` /users
 
@@ -88,7 +95,7 @@ Example
 `500` Internal Server Error | Something went wrong while creating the user
 
 
-### User login
+### Login User
 
 #### `POST` /users/login
 
