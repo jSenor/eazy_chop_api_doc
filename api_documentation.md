@@ -22,8 +22,6 @@ Below is a list of some of the response codes you might see
 
 ## User
 
-If someone knows how to get the links to actually link please tell me
-
 * [User Schema](#user-schema)
 * [Fetch All Users](#user-fetch-all)
 * [Create User](#user-create)
@@ -31,6 +29,7 @@ If someone knows how to get the links to actually link please tell me
 * [Fund Wallet](#user-fund)
 * [Transfer Funds](#user-funds-transfer)
 
+<a id="user-schema"></a>
 ### User Schema
 
 The representation of a valid user is given below
@@ -45,6 +44,7 @@ The representation of a valid user is given below
     }
 ```
 
+<a id="user-fetch-all"></a>
 ### Fetch All Users (Will not be released in production)
 
 #### `GET` /users
@@ -64,6 +64,7 @@ Response
 
 `500` Internal server error
 
+<a id="user-create"></a>
 ### Create User
 
 #### `POST` /users
@@ -96,7 +97,7 @@ Example
 
 `500` Internal Server Error | Something went wrong while creating the user
 
-
+<a id="user-login"></a>
 ### Login User
 
 #### `POST` /users/login
@@ -132,6 +133,7 @@ Example
 
 `500` Internal Server Error
 
+<a id="user-funds-transfer"></a>
 ### Fund Wallet
 
 #### `POST` /users/fund
@@ -169,7 +171,8 @@ Example
 
 `500` Internal Sever Error
 
-### Transfer Funds <a id="user-funds-transfer"></a>
+<a id="user-funds-transfer"></a>
+### Transfer Funds
 
 #### `POST` /users/transfer
 
