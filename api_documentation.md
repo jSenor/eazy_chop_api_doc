@@ -5,7 +5,7 @@ The api contains resources, and each resource has serval actions that can be per
 
 A note on responses. Every response has a status code and a custom code.
 
-The custom code is the machine friendly description of the error that you can use if your switch statements or if blocks. If not custom code is specified then the statusCode would be used
+The custom code is the machine friendly description of the error that you can use if your switch statements or if blocks. If no custom code is specified then the statusCode would be used
 
 Below is a list of some of the response codes you might see
 
@@ -45,7 +45,7 @@ The representation of a valid user is given below
 Example
 
 ``` javascript
-    fetch("/users") //Returns an promise that will resolve to an object with an array of users.
+    fetch("/users") //Returns a promise that will resolve to an object with an array of users.
 ```
 
 ####
