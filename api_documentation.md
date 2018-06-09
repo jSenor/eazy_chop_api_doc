@@ -169,7 +169,7 @@ Example
 
 `500` Internal Sever Error
 
-### Transfer Funds
+### Transfer Funds <a id="user-funds-transfer"></a>
 
 #### `POST` /users/transfer
 
