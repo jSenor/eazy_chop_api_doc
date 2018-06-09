@@ -125,7 +125,7 @@ Example
 
 ### Fund Wallet
 
-#### `POST` /users/:phone
+#### `POST` /users/fund
 
 #### `REQUEST-BODY` token, amount
 
