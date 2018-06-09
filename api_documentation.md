@@ -5,7 +5,7 @@ The api contains resources, and each resource has serval actions that can be per
 
 A note on responses. Every response has a status code and a custom code.
 
-The custom code is the machine friendly description of the error that you can use if your switch statements or if blocks. If no custom code is specified then the statusCode would be used
+The custom code is the machine friendly description of the error that you can use in your switch statements or if blocks. If no custom code is specified then the statusCode would be used
 
 Below is a list of some of the response codes you might see
 
@@ -157,4 +157,50 @@ Example
 `403` Token Invalid (Code: TOKEN_INVALID) // Someone tampered with the token
 
 `403` User does not exist (Code: USER_DOES_NOT_EXIST) // Token was validated but the user generated doesn't exist
+
+`500` Internal Sever Error
+
+### Transfer Funds
+
+#### `POST` /users/transfer
+
+#### `REQUEST-PARAMS` phone, amount, token //phone of receiver
+
+#### `RESPONSE-PARAMS` currentAmount
+
+Example
+
+```javascript
+    fetch("/users/transfer", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+               phone: 9037280100,
+               amount: 300,
+               token: "dfkjfhsfshkdhksdhdfd",
+           })
+        })
+```
+
+#### Response
+
+`200` Units Transferred Successfully | Returns your current amount
+
+`400` Bad Request (Code: BAD_REQUEST)
+
+`400` Token not found (Code: TOKEN_NOT_FOUND) // User sent a request without the token
+
+`403` Token Expired (Code: TOKEN_EXPIRED)
+
+`403` Token Invalid (Code: TOKEN_INVALID) // Someone tampered with the token
+
+`403` User does not exist (Code: USER_DOES_NOT_EXIST) // Token was validated but the user generated doesn't exist
+
+`403` Trying to transfer to self (Code: SAME_USER)
+
+`403` Not enough unit (Code: NOT_ENOUGH_UNITS)
+
+`403` Receiver does not exist (Code: RECEIVER_DOES_NOT_EXIST)
+
+`500` Internal Sever Error
 
