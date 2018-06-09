@@ -18,21 +18,38 @@ The representation of a valid user is given below
         "firstname": "String",
         "lastname": "String",
         "password": "String",
-        "wallet": "Number"
+        "wallet": "Number
     }
 ```
 
 ### User creation
 
-`POST` /users
+#### `POST` /users
 
-`REQUEST-BODY` phone, firstname, lastname, password
+#### `REQUEST-BODY` phone, firstname, lastname, password
 
 Example 
 
 ```javascript
-    fetch(/users, {
-        method: POST
+
+    fetch("/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            phone: 0992839329,
+            firstname: "Bob",
+            lastname: "Alice",
+            password: "closeyoureyes"
+        })
     })
+
 ```
 
+#### Response
+`200` User created successfully
+
+`400` User Exists (code: "USER_EXISTS")
+
+`400` Bad Request (code: "BAD_REQUEST")
+
+`500` Internal Server Error | Something went wrong while creating the user
