@@ -20,6 +20,7 @@ Below is a list of some of the response codes you might see
 ## Resources
 * [User](#user)
 
+<a id="user"></a>
 ## User
 
 * [User Schema](#user-schema)
@@ -133,7 +134,7 @@ Example
 
 `500` Internal Server Error
 
-<a id="user-funds-transfer"></a>
+<a id="user-fund"></a>
 ### Fund Wallet
 
 #### `POST` /users/fund
