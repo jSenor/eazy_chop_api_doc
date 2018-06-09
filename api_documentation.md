@@ -22,6 +22,8 @@ Below is a list of some of the response codes you might see
 
 ## User
 
+If someone knows how to get the links to actually link please tell me
+
 * [User Schema](#user-schema)
 * [Fetch All Users](#user-fetch-all)
 * [Create User](#user-create)
