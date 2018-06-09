@@ -1,14 +1,14 @@
 
-#Eazychop Api Documentation
+# Eazychop Api Documentation
 
 The api contains resources, and each resource has serval actions that can be performed on it.
 
-##Resources
+## Resources
 * [User](#user)
 
-##User
+## User
 
-###User Schema
+### User Schema
 
 The representation of a valid user is given below
 
@@ -22,7 +22,7 @@ The representation of a valid user is given below
     }
 ```
 
-###User creation
+### User creation
 
 `POST` /users
 
