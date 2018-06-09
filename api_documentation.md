@@ -14,11 +14,11 @@ The representation of a valid user is given below
 
 ```json
     {
-        "phone": Number,
-        "firstname": String,
-        "lastname": String,
-        "password": String,
-        "wallet": Number
+        "phone": "Number",
+        "firstname": "String",
+        "lastname": "String",
+        "password": "String",
+        "wallet": "Number"
     }
 ```
 
